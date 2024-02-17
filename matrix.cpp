@@ -24,7 +24,7 @@ std::vector<std::vector<int>> createUTMat(std::vector<std::vector<int>>& mat) {
 	// Any element above the main diagonal will be 100, rest 0
 	for (int i = 0; i < row; i++) { 
 		for (int j = 0; j < col; ++j) {
-			if (i > j) { 
+			if (i >= j) { 
 				mat[i][j] = 0;
 			} else {
 				mat[i][j] = 100; 
